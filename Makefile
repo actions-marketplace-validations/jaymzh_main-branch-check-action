@@ -1,2 +1,2 @@
-dist/index.js: index.js
-	./node_modules/.bin/ncc build index.js -o dist
+dist/index.js: src/index.js rollup.config.js
+	./node_modules/.bin/rollup -c
